@@ -7,7 +7,7 @@
  */
 
 version = "0.0.1a"
-group = "org.example"
+group = "com.github.com.XD5000"
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
