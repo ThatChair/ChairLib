@@ -7,6 +7,7 @@
  */
 
 version = "0.0.1a"
+group = "org.example"
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
@@ -14,10 +15,11 @@ plugins {
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
+    `maven-publish`
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
+    // Use Maven Cgradlew build publishToMavenLocalentral for resolving dependencies.
     mavenCentral()
 }
 
@@ -35,6 +37,21 @@ testing {
         val test by getting(JvmTestSuite::class) {
             // Use Kotlin Test test framework
             useKotlinTest("1.9.0")
+        }
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("chairLib") {
+            from(components["java"])
+        }
+    }
+
+    repositories {
+        maven {
+            name = "ChairLib"
+            url = uri(layout.buildDirectory.dir("repo"))
         }
     }
 }
