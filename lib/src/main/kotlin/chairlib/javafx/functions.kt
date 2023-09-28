@@ -3,11 +3,16 @@ package chairlib.javafx
 import javafx.scene.image.ImageView
 
 /**
- *  An image scaling function
+ * An ImageView scaling function. Learn more about ImageViews [here](<https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html>).
  *
- *  Scales the provided image to either the given max height or max width, whichever would make the image smaller
+ *  Scales the provided ImageView to either the given max height or max width, whichever would make the image smaller
  *
- *  @param imageView the image to scale
+ *  @author by ThatChair
+ *
+ *  @return An ImageView scaled to either the maxHeight or maxWidth
+ *  @since 0.0.4
+ *
+ *  @param imageView the ImageView to scale
  *  @param maxHeight the maximum height of the image
  *  @param maxWidth the maximum width of the image
  */
@@ -22,28 +27,68 @@ fun autoScaleImage(imageView: ImageView, maxHeight: Double, maxWidth: Double): I
     return scaleImage(imageView, scaleFactor)
 }
 
-// Returns a scaled ImageView with given height and a preserved aspect ratio
-fun scaleImageToHeight(image: ImageView, height: Double): ImageView {
+/**
+ * An ImageView scaling function. Learn more about ImageViews [here](<https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html>).
+ *
+ * Scales the provided ImageView to the specified height, maintaining aspect ratio
+ *
+ * @author by ThatChair
+ *
+ * @return The provided ImageView scaled to the specified height
+ * @since 0.0.4
+ *
+ * @param imageView the ImageView to scale
+ * @param height the desired height of the ImageView
+ *
+ */
+fun scaleImageToHeight(imageView: ImageView, height: Double): ImageView {
     // Calculates the scaling factor based off of the image's height and the desired height
-    val scalingFactor = height / image.image.height
+    val scalingFactor = height / imageView.image.height
     // uses the scaleImage function to scale the image with the calculated scaling factor and returns the scaled image
-    return scaleImage(image, scalingFactor)
+    return scaleImage(imageView, scalingFactor)
 }
-// Returns a scaled ImageView with given width and a preserved aspect ratio
-fun scaleImageToWidth(image: ImageView, width: Double): ImageView {
+
+
+/**
+ * An ImageView scaling function. Learn more about ImageViews [here](<https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html>).
+ *
+ * Scales the provided ImageView to the specified width while maintaining aspect ratio
+ *
+ * @author by ThatChair
+ *
+ * @return The provided ImageView scaled to the specified width
+ * @since 0.0.4
+ *
+ * @param imageView the ImageView to scale
+ * @param width the desired width of the ImageView
+ *
+ */
+fun scaleImageToWidth(imageView: ImageView, width: Double): ImageView {
     // Calculates the scaling factor based off of the image's width and the desired width
-    val scalingFactor = width / image.image.width
+    val scalingFactor = width / imageView.image.width
     // uses the scaleImage function to scale the image with the calculated scaling factor and returns the scaled image
-    return scaleImage(image, scalingFactor)
+    return scaleImage(imageView, scalingFactor)
 }
 
-
-// Scales an ImageView to a given scale factor
-fun scaleImage(image: ImageView, scaleFactor: Double): ImageView {
+/**
+ * An ImageView scaling function. Learn more about ImageViews [here](<https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html>).
+ *
+ * Scales the provided ImageView to by the specified scaling factor
+ *
+ * @author by ThatChair
+ *
+ * @return The inputted ImageView scaled by the specified scaleFactor
+ * @since 0.0.4
+ *
+ * @param imageView the ImageView to scale
+ * @param scaleFactor the desired width
+ *
+ */
+fun scaleImage(imageView: ImageView, scaleFactor: Double): ImageView {
     // Fits the width and height of the image to the original height multiplied by the given scale factor
-    image.fitWidth = scaleFactor * image.image.width
-    image.fitHeight = scaleFactor * image.image.height
+    imageView.fitWidth = scaleFactor * imageView.image.width
+    imageView.fitHeight = scaleFactor * imageView.image.height
 
     // Returns the scaled image
-    return image
+    return imageView
 }

@@ -6,7 +6,7 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
-version = "0.0.1a"
+version = "0.0.5"
 
 
 plugins {
