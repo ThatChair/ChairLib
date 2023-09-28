@@ -12,12 +12,22 @@ version = "0.0.1a"
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.9.0"
+    id("org.jetbrains.dokka") version "1.9.0"
+    id("org.openjfx.javafxplugin") version "0.0.13"
+    application
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
     `maven-publish`
 }
 group = "com.github.com.XD5000"
+
+javafx {
+    version = "21"
+    javafx {
+        modules("javafx.controls", "javafx.graphics")
+    }
+}
 
 repositories {
     // Use Maven Cgradlew build publishToMavenLocalentral for resolving dependencies.
