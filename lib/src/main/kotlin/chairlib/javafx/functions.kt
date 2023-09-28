@@ -28,7 +28,7 @@ fun autoScaleImage(imageView: ImageView, maxHeight: Double, maxWidth: Double): I
 }
 
 /**
- * An ImageView scaling function. Learn more about ImageViews [here](<https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html>).
+ * An ImageView scaling function. Learn more about ImageViews [here](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html).
  *
  * Scales the provided ImageView to the specified height, maintaining aspect ratio
  *
@@ -50,7 +50,7 @@ fun scaleImageToHeight(imageView: ImageView, height: Double): ImageView {
 
 
 /**
- * An ImageView scaling function. Learn more about ImageViews [here](<https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html>).
+ * An ImageView scaling function. Learn more about ImageViews [here](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html).
  *
  * Scales the provided ImageView to the specified width while maintaining aspect ratio
  *
@@ -71,7 +71,7 @@ fun scaleImageToWidth(imageView: ImageView, width: Double): ImageView {
 }
 
 /**
- * An ImageView scaling function. Learn more about ImageViews [here](<https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html>).
+ * An ImageView scaling function. Learn more about ImageViews [here](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/ImageView.html).
  *
  * Scales the provided ImageView to by the specified scaling factor
  *
