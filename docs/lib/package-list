@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:chairlib.javafx////PointingToDeclaration/lib/chairlib.javafx/index.html
+$dokka.location:chairlib.javafx//autoScaleImage/#javafx.scene.image.ImageView#kotlin.Double#kotlin.Double/PointingToDeclaration/lib/chairlib.javafx/auto-scale-image.html
+$dokka.location:chairlib.javafx//scaleImage/#javafx.scene.image.ImageView#kotlin.Double/PointingToDeclaration/lib/chairlib.javafx/scale-image.html
+$dokka.location:chairlib.javafx//scaleImageToHeight/#javafx.scene.image.ImageView#kotlin.Double/PointingToDeclaration/lib/chairlib.javafx/scale-image-to-height.html
+$dokka.location:chairlib.javafx//scaleImageToWidth/#javafx.scene.image.ImageView#kotlin.Double/PointingToDeclaration/lib/chairlib.javafx/scale-image-to-width.html
+chairlib.javafx
+
