@@ -7,7 +7,7 @@
  */
 
 version = "0.0.1a"
-group = "com.github.com.XD5000"
+
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
@@ -17,6 +17,7 @@ plugins {
     `java-library`
     `maven-publish`
 }
+group = "com.github.com.XD5000"
 
 repositories {
     // Use Maven Cgradlew build publishToMavenLocalentral for resolving dependencies.
